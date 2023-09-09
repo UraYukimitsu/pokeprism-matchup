@@ -1,0 +1,100 @@
+:root {
+    color-scheme: dark;
+    background: #181818;
+    color: #EEE;
+}
+
+body {
+    background: #181818;
+    color: #EEE;
+    font-family: sans-serif;
+    max-width: min(95vw, 1000px);
+    margin: auto;
+    margin-top: 20px;
+}
+
+#matchup_tbl {
+    margin: 10px auto;
+}
+
+#matchup_tbl tr {
+    height: 2em;
+}
+
+#matchup_tbl .hdr-row th {
+    writing-mode: sideways-lr;
+    text-orientation: mixed;
+}
+
+#matchup_tbl td {
+    width: 2em;
+    border: 1px solid #888;
+    text-align: center;
+}
+
+#pkmn_matchup {
+    border-collapse: collapse;
+    margin: 10px auto;
+    display: none;
+}
+
+#pkmn_matchup tr {
+    border: 1px solid #888;
+}
+
+.imm {
+    background-color: #000;
+    color: #888;
+}
+
+.nve {
+    background-color: #c22645;
+    color: #EEE;
+}
+
+.ve {
+    background-color: #2d9c43;
+    color: #EEE;
+}
+
+#supereff, #neutral, #noteff, #immune {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.eff {
+    margin: 5px 5px;
+    border: 1px solid #111;
+    border-radius: 5px;
+    padding: 5px 5px;
+    font-weight: bold;
+}
+
+.eff::after {
+    display: inline;
+    margin-left: 3px;
+    content: "(x" attr(data-eff) ")";
+    font-size: 0.75em;
+}
+
+.type_normal   { background: #a8a878 }
+.type_fighting { background: #c03028 }
+.type_flying   { background: #a890f0 }
+.type_poison   { background: #a040a0 }
+.type_ground   { background: #ccad59 }
+.type_rock     { background: #b8a038 }
+.type_bug      { background: #a8b820 }
+.type_ghost    { background: #705898 }
+.type_steel    { background: #9a9ab8 }
+.type_fairy    { background: #ee99ac }
+.type_gas      { background: #222d3b }
+.type_sound    { background: #2b2444 }
+.type_triple   { background: linear-gradient(135deg, #f08030 0%, #f08030 33%, #7edada 33%, #7edada 66%, #eecc00 66%, #eecc00 100%) }
+.type_fire     { background: #f08030 }
+.type_water    { background: #6890f0 }
+.type_grass    { background: #78c850 }
+.type_electric { background: #eecc00 }
+.type_psychic  { background: #f85888 }
+.type_ice      { background: #7edada }
+.type_dragon   { background: #7038f8 }
+.type_dark     { background: #705848 }

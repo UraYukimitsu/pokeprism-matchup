@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pok&eacute;mon Prism type matchup</title>
+    <link rel="stylesheet" href="matchup.css">
+</head>
+<body>
+    <h1>Pok&eacute;mon Prism type matchup</h1>
+    <table id="matchup_tbl"></table>
+    <label for="pkmn">Pok&eacute;mon: </label>
+    <input list="pkmn_names" id="pkmn" type="text">
+    <datalist id="pkmn_names"></datalist>
+    <span id="types"></span>
+    <table id="pkmn_matchup">
+        <tr><th class="ve">Super effective</th><td id="supereff"></td></tr>
+        <tr><th class="ntr">Neutral</th><td id="neutral"></td></tr>
+        <tr><th class="nve">Not very effective</th><td id="noteff"></td></tr>
+        <tr><th class="imm">Immune</th><td id="immune"></td></tr>
+    </table>
+    <p>Copyright (c) 2023 - Ura Yukimitsu. <a href="https://github.com/UraYukimitsu/pokeprism-matchup">GitHub</a></p>
+</body>
+<script src="types.js"></script>
+<script src="pkmn_list.js"></script>
+<script src="matchup.js"></script>
+</html>
